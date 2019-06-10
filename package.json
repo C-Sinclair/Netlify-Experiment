@@ -5,6 +5,10 @@
   "author": "Conor Sinclair",
   "dependencies": {
     "apollo-boost": "^0.4.2",
+    "apollo-client": "^2.6.2",
+    "apollo-client-preset": "^1.0.8",
+    "apollo-link-context": "^1.0.17",
+    "apollo-link-http": "^1.5.14",
     "apollo-server-lambda": "^2.6.1",
     "gatsby": "^2.1.34",
     "gatsby-image": "^2.0.23",
