@@ -1,7 +1,14 @@
 import React from "react"
+import { Provider } from 'react-redux'
 import { ApolloProvider } from "react-apollo"
-import { client } from "./src/apollo/client"
+
+import store from "./src/redux/store"
+import client from "./src/apollo/client"
 
 export const rootWrap = ({ element }) => {
-    <ApolloProvider client={client}>{element}</ApolloProvider>
+    <Provider store={store}>
+        <ApolloProvider client={client}>
+            {element}
+        </ApolloProvider>
+    </Provider>
 }
